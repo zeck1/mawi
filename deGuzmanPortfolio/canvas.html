@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floom</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+</head>
+<header>
+  <h2>About the author</h2>
+</header>
+
+<body>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="css.html">CSS</a>
+  <a href="svg.html">SVG</a>
+  <a class="active" href="canvas.html">Canvas</a>
+  <a href="about.html">About the Author</a>
+</nav>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+            id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+            xml:space="preserve" width="512" height="512">
+                <g>
+                    <rect id="stem1" x="241" y="271" style="fill:#5BC980;" width="30" height="226"/>
+                    <rect id="stem2" x="256" y="271" style="fill:#00AB5E;" width="15" height="226"/>
+                    <g>
+                        <path id="upperpetals1" style="fill:#FFD2FE;" d="M346,166l-152.725-3.56l5.991-19.043C234.894,30.318,340.227,3.558,346,0V166z"/>
+                    </g>
+                    <g>
+                        <path id="upperpetals2" style="fill:#FFB6FA;" d="M323.8,179.5c-5.7-48.3-30.601-90.3-67.8-117.9c-17.999-13.801-39-25.001-62.1-30.7L166,24v172    l90,0.3h69.6L323.8,179.5z"/>
+                    </g>
+                    <path id="upperpetals3" style="fill:#FF9AC9;" d="M325.6,196.3H256v-134.7c37.2,27.599,62.1,69.6,67.8,117.9L325.6,196.3z"/>
+                    <path id="leafs1" style="fill:#7FE881;" d="M421,422v15c0,41.4-33.6,75-75,75H166c-41.4,0-75-33.6-75-75v-15h90c41.4,0,75,33.6,75,75   c0-41.4,33.6-75,75-75H421z"/>
+                    <path id="lowerpetals1" style="fill:#D94F88;" d="M361.894,104.857c-39.917,6.65-74.561,28.652-97.559,61.963c-3.666,5.314-6.832,11.735-9.75,18.55   L271,301h30c33.091,0,60-26.909,60-60c0-32.139,6.372-85.972,18.413-115.942l8.818-24.595L361.894,104.857z"/>
+                    <path id="lowerpetals2" style="fill:#FF7CB9;" d="M271,271v30h-60c-32.999,0-60-27.001-60-60c0-32.1-6.899-85.8-19.799-115.201L120.099,100.3   l27.301,4.501c39.901,6.899,74.399,28.799,97.2,62.1c3.9,5.099,7.2,11.699,9.901,18.6c0.599,1.199,1.199,2.399,1.5,3.9   C265.901,213.999,271,245.2,271,271z"/>
+                    <path id="lowerpetals3" style="fill:#FA5E97;" d="M271,271v30h-15V189.401C265.901,213.999,271,245.2,271,271z"/>
+                    <path id="leafs2" style="fill:#5BC980;" d="M421,422v15c0,41.4-33.6,75-75,75h-90v-15c0-41.4,33.6-75,75-75H421z"/>
+                </g>
+    
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+            id="Layer_2" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+            xml:space="preserve" width="512" height="512">
+                <g>
+                    <rect id="stem1" x="241" y="271" style="fill:#5BC980;" width="30" height="226"/>
+                    <rect id="stem2" x="256" y="271" style="fill:#00AB5E;" width="15" height="226"/>
+                    <g>
+                        <path id="upperpetals1" style="fill:#FFD2FE;" d="M346,166l-152.725-3.56l5.991-19.043C234.894,30.318,340.227,3.558,346,0V166z"/>
+                    </g>
+                    <g>
+                        <path id="upperpetals2" style="fill:#FFB6FA;" d="M323.8,179.5c-5.7-48.3-30.601-90.3-67.8-117.9c-17.999-13.801-39-25.001-62.1-30.7L166,24v172    l90,0.3h69.6L323.8,179.5z"/>
+                    </g>
+                    <path id="upperpetals3" style="fill:#FF9AC9;" d="M325.6,196.3H256v-134.7c37.2,27.599,62.1,69.6,67.8,117.9L325.6,196.3z"/>
+                    <path id="leafs1" style="fill:#7FE881;" d="M421,422v15c0,41.4-33.6,75-75,75H166c-41.4,0-75-33.6-75-75v-15h90c41.4,0,75,33.6,75,75   c0-41.4,33.6-75,75-75H421z"/>
+                    <path id="lowerpetals1" style="fill:#D94F88;" d="M361.894,104.857c-39.917,6.65-74.561,28.652-97.559,61.963c-3.666,5.314-6.832,11.735-9.75,18.55   L271,301h30c33.091,0,60-26.909,60-60c0-32.139,6.372-85.972,18.413-115.942l8.818-24.595L361.894,104.857z"/>
+                    <path id="lowerpetals2" style="fill:#FF7CB9;" d="M271,271v30h-60c-32.999,0-60-27.001-60-60c0-32.1-6.899-85.8-19.799-115.201L120.099,100.3   l27.301,4.501c39.901,6.899,74.399,28.799,97.2,62.1c3.9,5.099,7.2,11.699,9.901,18.6c0.599,1.199,1.199,2.399,1.5,3.9   C265.901,213.999,271,245.2,271,271z"/>
+                    <path id="lowerpetals3" style="fill:#FA5E97;" d="M271,271v30h-15V189.401C265.901,213.999,271,245.2,271,271z"/>
+                    <path id="leafs2" style="fill:#5BC980;" d="M421,422v15c0,41.4-33.6,75-75,75h-90v-15c0-41.4,33.6-75,75-75H421z"/>
+                </g>
+    
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+            id="Layer_3" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+            xml:space="preserve" width="512" height="512">
+                <g>
+                    <rect id="stem1" x="241" y="271" style="fill:#5BC980;" width="30" height="226"/>
+                    <rect id="stem2" x="256" y="271" style="fill:#00AB5E;" width="15" height="226"/>
+                    <g>
+                        <path id="upperpetals1" style="fill:#FFD2FE;" d="M346,166l-152.725-3.56l5.991-19.043C234.894,30.318,340.227,3.558,346,0V166z"/>
+                    </g>
+                    <g>
+                        <path id="upperpetals2" style="fill:#FFB6FA;" d="M323.8,179.5c-5.7-48.3-30.601-90.3-67.8-117.9c-17.999-13.801-39-25.001-62.1-30.7L166,24v172    l90,0.3h69.6L323.8,179.5z"/>
+                    </g>
+                    <path id="upperpetals3" style="fill:#FF9AC9;" d="M325.6,196.3H256v-134.7c37.2,27.599,62.1,69.6,67.8,117.9L325.6,196.3z"/>
+                    <path id="leafs1" style="fill:#7FE881;" d="M421,422v15c0,41.4-33.6,75-75,75H166c-41.4,0-75-33.6-75-75v-15h90c41.4,0,75,33.6,75,75   c0-41.4,33.6-75,75-75H421z"/>
+                    <path id="lowerpetals1" style="fill:#D94F88;" d="M361.894,104.857c-39.917,6.65-74.561,28.652-97.559,61.963c-3.666,5.314-6.832,11.735-9.75,18.55   L271,301h30c33.091,0,60-26.909,60-60c0-32.139,6.372-85.972,18.413-115.942l8.818-24.595L361.894,104.857z"/>
+                    <path id="lowerpetals2" style="fill:#FF7CB9;" d="M271,271v30h-60c-32.999,0-60-27.001-60-60c0-32.1-6.899-85.8-19.799-115.201L120.099,100.3   l27.301,4.501c39.901,6.899,74.399,28.799,97.2,62.1c3.9,5.099,7.2,11.699,9.901,18.6c0.599,1.199,1.199,2.399,1.5,3.9   C265.901,213.999,271,245.2,271,271z"/>
+                    <path id="lowerpetals3" style="fill:#FA5E97;" d="M271,271v30h-15V189.401C265.901,213.999,271,245.2,271,271z"/>
+                    <path id="leafs2" style="fill:#5BC980;" d="M421,422v15c0,41.4-33.6,75-75,75h-90v-15c0-41.4,33.6-75,75-75H421z"/>
+                </g>
+    
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+            id="Layer_4" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+            xml:space="preserve" width="512" height="512">
+                <g>
+                    <rect id="stem1" x="241" y="271" style="fill:#5BC980;" width="30" height="226"/>
+                    <rect id="stem2" x="256" y="271" style="fill:#00AB5E;" width="15" height="226"/>
+                    <g>
+                        <path id="upperpetals1" style="fill:#FFD2FE;" d="M346,166l-152.725-3.56l5.991-19.043C234.894,30.318,340.227,3.558,346,0V166z"/>
+                    </g>
+                    <g>
+                        <path id="upperpetals2" style="fill:#FFB6FA;" d="M323.8,179.5c-5.7-48.3-30.601-90.3-67.8-117.9c-17.999-13.801-39-25.001-62.1-30.7L166,24v172    l90,0.3h69.6L323.8,179.5z"/>
+                    </g>
+                    <path id="upperpetals3" style="fill:#FF9AC9;" d="M325.6,196.3H256v-134.7c37.2,27.599,62.1,69.6,67.8,117.9L325.6,196.3z"/>
+                    <path id="leafs1" style="fill:#7FE881;" d="M421,422v15c0,41.4-33.6,75-75,75H166c-41.4,0-75-33.6-75-75v-15h90c41.4,0,75,33.6,75,75   c0-41.4,33.6-75,75-75H421z"/>
+                    <path id="lowerpetals1" style="fill:#D94F88;" d="M361.894,104.857c-39.917,6.65-74.561,28.652-97.559,61.963c-3.666,5.314-6.832,11.735-9.75,18.55   L271,301h30c33.091,0,60-26.909,60-60c0-32.139,6.372-85.972,18.413-115.942l8.818-24.595L361.894,104.857z"/>
+                    <path id="lowerpetals2" style="fill:#FF7CB9;" d="M271,271v30h-60c-32.999,0-60-27.001-60-60c0-32.1-6.899-85.8-19.799-115.201L120.099,100.3   l27.301,4.501c39.901,6.899,74.399,28.799,97.2,62.1c3.9,5.099,7.2,11.699,9.901,18.6c0.599,1.199,1.199,2.399,1.5,3.9   C265.901,213.999,271,245.2,271,271z"/>
+                    <path id="lowerpetals3" style="fill:#FA5E97;" d="M271,271v30h-15V189.401C265.901,213.999,271,245.2,271,271z"/>
+                    <path id="leafs2" style="fill:#5BC980;" d="M421,422v15c0,41.4-33.6,75-75,75h-90v-15c0-41.4,33.6-75,75-75H421z"/>
+                </g>
+    
+        </svg>
+
+
+        <div class="grass">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2500" height="200" viewBox="0 0 1000 80" role="img">
+                <g transform="matrix(1.6454 0 0 1.6454 -29.086 -18.779)">
+                    <path d="m57.272 57.878c0-1.0778 0.83265-1.445 1.8503-0.81598 1.0177 0.62898 1.8504 1.5108 1.8504 1.9595 0 0.4488-0.83265 0.81598-1.8504 0.81598-1.0177 0-1.8503-0.8818-1.8503-1.9595zm10.148-3.7238c-1.7596-8.0113-0.24968-8.3564 3.3681-0.76963 2.5338 5.3135 2.6182 6.4528 0.47863 6.4528-1.4292 0-3.1604-2.5574-3.8469-5.6833zm13.851 2.0857c2.1766-4.0671 5.3938-6.4834 6.7827-5.0945 1.5108 1.5108-3.7044 8.692-6.3124 8.692-1.7993 0-1.9163-0.89545-0.47013-3.5975zm137.99 0.59099c-1.6843-1.8611-3.0623-3.972-3.0623-4.6911 0-2.2367 6.9062 2.2651 8.0508 5.2478 1.4832 3.8651-1.2642 3.5584-4.9885-0.55688zm6.9214 0.14572c-0.55118-1.781-2.1904-5.9724-3.6426-9.3144-3.3995-7.8233-3.3258-8.8227 0.4217-5.7148 3.0392 2.5204 8.04 12.695 8.04 16.358 0 3.1738-3.7451 2.1414-4.819-1.3283zm6.6252-3.7007c-0.0242-3.8163-0.81091-10.246-1.7481-14.288-0.93715-4.0423-1.3484-7.7051-0.91389-8.1394 1.5769-1.5769 8.1822 15.656 8.4193 21.965 0.23988 6.3825 0.26645 6.3589 1.8355-1.6278 1.7388-8.8509 6.1827-16.876 9.3452-16.876 1.1031 0 1.5408 1.0408 0.97263 2.3129-0.56816 1.2721-2.9471 7.0866-5.2864 12.921-3.4002 8.4804-5.0884 10.614-8.4168 10.639-3.5751 0.02705-4.1695-0.94853-4.2074-6.9071zm12.071 5.0884c0.62897-1.0177 1.5108-1.8503 1.9596-1.8503 0.44878 0 0.81596 0.83265 0.81596 1.8503s-0.88178 1.8503-1.9595 1.8503c-1.0778 0-1.4449-0.83265-0.81598-1.8503zm17.856-3.7007c-1.0643-3.0531-1.6188-5.551-1.2322-5.551 0.38659 0 2.4816 2.498 4.6555 5.551 3.0801 4.3256 3.3521 5.551 1.2322 5.551-1.4963 0-3.5913-2.498-4.6557-5.551zm10.825 2.0816c0-1.9082-0.42537-6.2796-0.9453-9.7143l-0.94529-6.2449 3.6722 7.4014c4.4276 8.924 4.6842 12.027 0.99382 12.027-1.5265 0-2.7755-1.5612-2.7755-3.4694zm10.271-0.69388c1.4488-4.7542 6.182-10.639 8.5567-10.639 0.88065 0-0.0981 3.3306-2.1747 7.4014-4.065 7.9678-8.5109 10.224-6.3821 3.2381zm27.459-2.8902c-3.6859-8.8215-2.1409-9.9336 2.7672-1.9918 4.4103 7.1361 4.7579 8.6679 1.967 8.6679-1.0696 0-3.1999-3.0043-4.7343-6.6763zm9.0438-3.9632c-1.0751-5.8517-1.6454-10.972-1.2674-11.378 1.0528-1.1307 8.0677 15.105 8.1138 18.779 0.0231 1.781-1.0691 3.2381-2.4256 3.2381-1.542 0-3.1985-3.9868-4.4209-10.639zm9.7721 6.4762c2.4145-7.827 6.4598-14.34 8.9066-14.34 1.742 0 1.1286 2.6601-2.1336 9.2517-4.6337 9.363-9.1347 12.744-6.773 5.0884zm21.169 2.2037c0-1.0778 0.83265-1.445 1.8503-0.81598 1.0177 0.62898 1.8504 1.5108 1.8504 1.9595 0 0.4488-0.83265 0.81598-1.8504 0.81598-1.0177 0-1.8503-0.8818-1.8503-1.9595zm10.148-3.7238c-1.7596-8.0113-0.24968-8.3564 3.3681-0.76963 2.5338 5.3135 2.6182 6.4528 0.47863 6.4528-1.4292 0-3.1604-2.5574-3.8469-5.6833zm13.851 2.0857c2.1766-4.0671 5.3938-6.4834 6.7827-5.0945 1.5108 1.5108-3.7044 8.692-6.3124 8.692-1.7993 0-1.9163-0.89545-0.47013-3.5975zm-337.65-40.924c-0.32597 0.13625-0.94959 1.1273-1.9336 2.7695-1.5245 2.5442-3.7456 7.9566-4.9336 12.027l-2.1582 7.4023-1.7383-6.4766c-1.7349-6.4669-6.2452-12.953-9.0078-12.953-1.3174-1e-6 5.0052 16.135 9.6777 24.697 1.026 1.8799 1.4578 3.8254 0.96094 4.3223-0.49705 0.49682-1.8328-0.83255-2.9688-2.9551-3.5105-6.5595-5.8502-4.2535-2.8848 2.8438 2.5084 6.0037 2.5069 6.458-0.01953 4.3613-4.4602-3.7016-5.2607-0.76046-1.5234 5.5957 2.6279 4.4695 3.5687 5.0786 4.0684 2.6348 0.53049-2.5945 0.95104-2.7046 2.2852-0.59766 1.1371 1.7958 1.6851 0.61036 1.8027-3.8945l0.16992-6.4766 2.1719 5.8809c3.5029 9.4839 4.0215 8.5258 4.0215-7.4219 0-8.3124 0.64109-19.275 1.4238-24.363 0.84208-5.474 1.1292-7.6236 0.58594-7.3965zm10.297 6.6582c-0.80657-0.07368-2.801 2.2237-5.3438 6.752-3.0585 5.4467-3.9175 10.238-3.9941 22.283-0.06051 9.5128-0.2648 9.8075 0.8528 9.1168 0.99153-0.6127 2.655 1.5107 2.655-1.5328 0-5.7816 3.9895-15.085 8.8379-20.615 4.098-4.674 0.53736-3.987-4.7852 0.92383l-4.5117 4.1641 1.377-4.627c0.75702-2.5442 2.4832-7.3312 3.8359-10.639 1.5748-3.8506 1.7879-5.7612 1.0762-5.8262zm54.289 30.647c-5.9361-9.0667-5.1671-11.477 1.4006-4.3902l4.6536 5.0211-1.5724-5.4826c-0.86481-3.0154-2.4964-7.2092-3.6257-9.3195-3.3748-6.3057-2.2452-9.0535 1.677-4.0802 4.5553 5.7758 7.9345 17.516 6.4175 22.295-1.6717 5.267-3.3514 4.5084-8.9506-4.0437zm11.745-2.986c-6e-3 -5.8517-0.89903-13.84-1.9852-17.752-1.0862-3.9119-1.5127-7.5746-0.94775-8.1394 1.7588-1.7588 8.4003 14.911 8.6564 21.728 0.23988 6.3825 0.26643 6.3589 1.8355-1.6278 1.6956-8.6312 6.1644-16.876 9.1472-16.876 2.29 0 2.2662 0.66982-0.21719 6.1205-1.6358 3.5901-1.2802 5.9044 1.8503 12.041 2.1314 4.1778 3.8753 9.2887 3.8753 11.357 0 3.214-1.0964 3.718-7.5364 3.4657-6.3277-0.24795-7.3942-0.83939-6.6494-3.6873 0.48787-1.8656 0.1323-3.3921-0.79007-3.3921-0.92242 0-1.6771 1.6653-1.6771 3.7007 0 2.0559-1.2336 3.7007-2.7755 3.7007-2.1441 0-2.7778-2.4202-2.7859-10.639zm16.419 1.2252c-2.5523-7.6324-5.3068-11.102-5.3068-6.6837 0 5.0871 0.28708 5.9435 1.8503 5.5203 0.8141-0.22042 2.0203 1.7512 2.6804 4.3816 0.66018 2.6303 1.5799 4.4029 2.0438 3.9389 0.46388-0.4639-0.10658-3.6845-1.2678-7.1571zm8.4676 0.44015c-0.6595-4.7323-1.8585-11.727-2.6645-15.543-0.80596-3.8163-0.83436-6.9388-0.0631-6.9388 1.7565 0 7.4192 14.594 7.5626 19.491 0.0607 2.07 2.0098-0.54923 4.5211-6.0756 2.4281-5.3429 5.5834-9.7143 7.0119-9.7143 2.0043 0 1.6379 2.0067-1.6047 8.7891-2.3111 4.834-4.8019 10.864-5.5351 13.4-1.192 4.1237-1.0113 4.3444 1.7094 2.0864 2.5965-2.1548 3.0424-2.112 3.0424 0.29205 0 1.9787-1.9017 2.8171-6.3906 2.8171-6.1991 0-6.4265-0.25782-7.5896-8.6041zm39.396 5.3599c-0.51205-1.781-1.5833-4.8319-2.3807-6.7797-2.2783-5.5665 2.4124-1.8047 5.7162 4.5842 2.3592 4.578 2.3823 5.4335 0.20817 5.4335-1.434 0-3.0262-1.4571-3.5383-3.2381zm8.1563-7.2473c-2.4702-12.3-1.41-14.934 2.3701-5.8869 4.7184 11.306 5.4816 16.372 2.4517 16.372-1.8262 0-3.413-3.4472-4.8264-10.485zm9.83 5.397c1.549-6.3 6.0277-13.415 8.4445-13.415 2.4966 0 2.3587 0.61723-2.2617 10.127-4.5084 9.2792-8.1292 11.205-6.1827 3.2876z"/>
+                </g>
+            </svg>	
+        </div>
+
+
+       	<!-- desk -->
+       <div class="desk">
+            <svg version="1.1" class="desk" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 691 305" xml:space="preserve">
+                <g id="desk">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#CCB090" d="M0 204.9h691v15H0v-15z"/>
+                <path fill="#EDCBA5" d="M41.7 138.9h604.1l45.2 66H0l41.7-66z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#959595" d="M57.2 220h46v85h-46v-85zM592.9 220h46v85h-46v-85z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#7D7D7D" d="M592.9 220.1h46v16.1c-28.3 5.3-46 51.8-46 51.8v-67.9zM103.2 288.1s-17.7-46.5-46-51.8v-16.1h46v67.9z"/>
+                </g>
+            </svg>
+      </div>
+
+        <!-- cat -->
+        <div class="cat">
+            <svg version="1.1" class="cat" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 74.2 253.3" xml:space="preserve">
+                <g id="cat" fill-rule="evenodd" clip-rule="evenodd" fill="#1A1A1A">
+                <path class="tail" d="M21 152.3s17.1-2.5 35.3.3c-6.6 3.8-6.6 22.2-10.6 30-2.8 8.1-7.3 14.6-8.3 31.8 0 6.3 3.5 20.7 2.5 27.8-1 7.1-3.8 8.3-5 11.1-6.8-4-11.6-14.6-12.9-23-1.3-8.3-1.8-20.5 1.5-30.5 3.5-11.4 5-19.4 6.3-28.8 1.3-9.3-8.8-18.7-8.8-18.7z"/>
+                <path class="body" d="M23 47S6.9 66.4 3.1 90.2c-2.5 14.4-6.3 47.2 1.8 56.3 8.1 9.1 30.3 11.9 34.8 11.4 13.6-1.3 24.7-5.6 29.7-12.6 5-7.1 8.3-28.3-2-62.6C57.1 48.3 55.8 47 55.8 47H23z"/>
+                <path class="head" d="M37.8 11.2c12 0 21.8 9.2 21.8 20.6 0 6.5-2.3 13.8-3.8 15.8-7.8.8-20.9 2.1-26 2.3-7 .3-13.9-6.7-13.9-18.1.1-11.4 9.8-20.6 21.9-20.6z"/>
+                <path class="earR" d="M56.8,22.7C58.1,11,54,0.6,52.8,0.2c-1.3-0.3-6.3,4.8-7.9,15.9
+                    C45.5,18.3,56,23.8,56.8,22.7z"/>
+                <path class="earL" d="M18.8,22.8c-4.2-11-2.9-22.1-1.8-22.7c1.1-0.6,7.3,3,11.6,13.4
+                    C28.6,15.7,19.8,23.7,18.8,22.8z"/>
+                </g>
+        </svg>
+    </div>
+
+    <div class="container">
+        <h1>F L O O M</h1>
+      </div>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" class="svg-defs">
+        <defs>
+      
+          <pattern id='image' width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <image xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/78881/pattern_141.gif" width="100" height="100" preserveAspectRatio="none"></image>
+          </pattern>
+      
+          <g id="shape-butterfly-1">
+            <path class="path" fill="" clip-rule="evenodd" d="M8.65,2.85c0.934-0.2,2.15-0.333,3.65-0.4c1.534-0.1,2.667-0.083,3.4,0.05
+              c1.533,0.267,3.45,0.767,5.75,1.5c2.466,0.8,4.35,1.617,5.65,2.45c2.066,1.2,3.883,2.383,5.45,3.55c2.567,2.1,4.35,3.8,5.35,5.1
+              l2.1,2.5c0.933,1.167,1.517,1.983,1.75,2.45c0.333,0.767,1.083,2.117,2.25,4.05c0.233,0.467,0.717,1.683,1.45,3.65
+              c0.733,2.067,1.2,3.45,1.4,4.15c0.467,1.733,0.917,3.767,1.35,6.1l0.4,3.85l-0.25-3.4c-0.6-5.967-1.267-10.25-2-12.85
+              c-0.733-2.434-2.167-5.467-4.3-9.1c-0.966-1.667-1.566-3-1.8-4c-0.233-0.933-0.1-1.267,0.4-1c1.3,0.733,2.917,3.867,4.85,9.4
+              c1.667,4.7,2.85,11.2,3.55,19.5c0.567,6.934,0.667,11.917,0.3,14.95l0.2,0.05c0.231,0,0.348-0.05,0.35-0.15v0.05l0.1,0.05v27.4
+              c-0.032-0.018-0.065-0.035-0.1-0.05v-0.05c-0.7,0.267-0.983,0.117-0.85-0.45c0.067-0.333,0.017-0.817-0.15-1.45
+              c-0.2-0.6-0.316-0.983-0.35-1.15l-0.5-1.65c-0.533-2.967-0.833-5.034-0.9-6.2c-0.1-1.533-0.133-2.4-0.1-2.6
+              c0-0.933,0.167-1.667,0.5-2.2c0.567-0.9,0.684-1.75,0.35-2.55c-0.167-0.367-0.367-0.6-0.6-0.7c-0.333-0.133-0.517,0.283-0.55,1.25
+              c-0.033,1.533-0.167,2.9-0.4,4.1c-0.1,2.3-0.267,3.684-0.5,4.15c-0.333,0.667-1.25,2.95-2.75,6.85c-1.167,2.8-2.233,4.817-3.2,6.05
+              c-0.9,1.2-1.583,2.1-2.05,2.7c-0.8,1-1.434,1.667-1.9,2c-2.067,1.333-3.633,2.067-4.7,2.2c-3.033,0.267-4.95,0.317-5.75,0.15
+              c-0.8-0.167-1.383-0.217-1.75-0.15c-0.533,0.1-1.033,0.45-1.5,1.05c-0.5,0.667-1.217,1.284-2.15,1.85
+              c-0.934,0.567-1.85,0.934-2.75,1.1c-2.467,0.433-4.45,0.25-5.95-0.55c-0.7-0.4-1.467-1.15-2.3-2.25c-0.6-0.867-1.033-1.567-1.3-2.1
+              c-0.267-0.667-0.483-1.483-0.65-2.45c-0.3-1.467-0.383-2.717-0.25-3.75c0.267-1.9,0.45-3.05,0.55-3.45
+              c0.233-1.233,0.566-2.333,1-3.3C9.25,77.45,9.767,76.4,10,76c0.667-1.233,1.55-2.583,2.65-4.05c1.1-1.434,2.184-2.583,3.25-3.45
+              c0.367-0.3,1.15-0.867,2.35-1.7c0.767-0.566,1.917-1.25,3.45-2.05c1.733-0.933,3.267-1.633,4.6-2.1
+              c2.133-0.733,4.534-1.467,7.2-2.2c0.467-0.1,1.517-0.3,3.15-0.6c0.967-0.233,0.4-0.4-1.7-0.5c-2.434-0.1-4.534-0.3-6.3-0.6
+              c-1.566-0.267-3.383-0.7-5.45-1.3c-2.8-0.8-4.467-1.317-5-1.55c-1.567-0.667-3.2-1.75-4.9-3.25c-1.733-1.533-3-3.1-3.8-4.7
+              c-0.533-1.067-0.967-2.434-1.3-4.1c-0.233-1.067-0.3-2.133-0.2-3.2c0.133-0.833,0.183-1.3,0.15-1.4v-0.6
+              c-2.467-3.233-3.983-5.433-4.55-6.6c-0.533-1.033-0.883-1.833-1.05-2.4c-0.3-0.867-0.466-1.85-0.5-2.95
+              c-0.033-2.367,0.034-4.117,0.2-5.25c0.3-1.034,0.483-1.8,0.55-2.3c0.167-0.867,0.034-1.533-0.4-2c-0.6-0.7-1.133-1.517-1.6-2.45
+              c-0.566-1.133-0.833-2.117-0.8-2.95c0.033-1.333,0.167-2.367,0.4-3.1c0.367-1.267,1.05-2.267,2.05-3
+              C4.417,4.25,6.483,3.317,8.65,2.85z"/>
+          <g>
+      
+        </defs>
+      </svg>
+      <section class="background"></section>
+      
+      <section class="scene3d">
+      
+        <div class="cube skybox">
+          <var class="scale">
+          <figure class="face front"></figure>
+          <figure class="face back"></figure>
+          <figure class="face right"></figure>
+          <figure class="face left"></figure>
+          <figure class="face top"></figure>
+          <figure class="face bottom"></figure>
+          </var>
+        </div>
+      
+        <div class="butterfly_container">
+          <var class="rotate3d">
+          <var class="scale">
+          <var class="translate3d">
+          <var class="translate3d-1">
+          <figure class="butterfly">
+            <svg class="wing left" viewBox="0 0 50 100" class="icon shape-codepen">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+            <svg class="wing right" viewBox="0 0 50 100" class="icon shape-codepen">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+          </figure>
+          </var>
+          </var>
+          </var>
+          </var>
+        </div>
+      
+        <div class="butterfly_container" 
+             style="margin-top: -150px; margin-left: 140px;
+                    -webkit-animation-duration: 5s;
+                    -moz-animation-duration: 5s;
+                    -ms-animation-duration: 5s;
+                    -o-animation-duration: 5s;
+                    animation-duration: 5s;">
+          <var class="rotate3d">
+          <var class="scale">
+          <var class="translate3d">
+          <var class="translate3d-1">
+          <figure class="butterfly">
+            <svg class="wing left" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: .75s;
+                        -moz-animation-duration: .75s;
+                        -ms-animation-duration: .75s;
+                        -o-animation-duration: .75s;
+                        animation-duration: .75s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+            <svg class="wing right" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: .75s;
+                        -moz-animation-duration: .75s;
+                        -ms-animation-duration: .75s;
+                        -o-animation-duration: .75s;
+                        animation-duration: .75s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+          </figure>
+          </var>
+          </var>
+          </var>
+          </var>
+        </div>
+      
+        <div class="butterfly_container scale_half" 
+             style="margin-top: -10px; margin-left: 50px;
+                    -webkit-animation-duration: 5s;
+                    -moz-animation-duration: 5s;
+                    -ms-animation-duration: 5s;
+                    -o-animation-duration: 5s;
+                    animation-duration: 5s;">
+          <var class="rotate3d">
+          <var class="scale">
+          <var class="translate3d">
+          <var class="translate3d-1">
+          <figure class="butterfly">
+            <svg class="wing left" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: .75s;
+                        -moz-animation-duration: .75s;
+                        -ms-animation-duration: .75s;
+                        -o-animation-duration: .75s;
+                        animation-duration: .75s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+            <svg class="wing right" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: .75s;
+                        -moz-animation-duration: .75s;
+                        -ms-animation-duration: .75s;
+                        -o-animation-duration: .75s;
+                        animation-duration: .75s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+          </figure>
+          </var>
+          </var>
+          </var>
+          </var>
+        </div>
+      
+        <div class="butterfly_container scale_half" 
+             style="margin-top: 20px;
+                    -webkit-animation-duration: 20s;
+                    -moz-animation-duration: 20s;
+                    -ms-animation-duration: 20s;
+                    -o-animation-duration: 20s;
+                    animation-duration: 20s;">
+          <var class="rotate3d">
+          <var class="scale">
+          <var class="translate3d">
+          <var class="translate3d-1">
+          <figure class="butterfly">
+            <svg class="wing left" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: 1s;
+                        -moz-animation-duration: 1s;
+                        -ms-animation-duration: 1s;
+                        -o-animation-duration: 1s;
+                        animation-duration: 1s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+            <svg class="wing right" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: 1s;
+                        -moz-animation-duration: 1s;
+                        -ms-animation-duration: 1s;
+                        -o-animation-duration: 1s;
+                        animation-duration: 1s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+          </figure>
+          </var>
+          </var>
+          </var>
+          </var>
+        </div>
+      
+        <div class="butterfly_container scale_half" 
+             style="margin-top: 100px; margin-left: 50px;
+                    -webkit-animation-duration: 20s;
+                    -moz-animation-duration: 20s;
+                    -ms-animation-duration: 20s;
+                    -o-animation-duration: 20s;
+                    animation-duration: 20s;">
+          <var class="rotate3d">
+          <var class="scale">
+          <var class="translate3d">
+          <var class="translate3d-1">
+          <figure class="butterfly">
+            <svg class="wing left" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: 1.2s;
+                        -moz-animation-duration: 1.2s;
+                        -ms-animation-duration: 1.2s;
+                        -o-animation-duration: 1.2s;
+                        animation-duration: 1.2s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+            <svg class="wing right" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: 1.2s;
+                        -moz-animation-duration: 1.2s;
+                        -ms-animation-duration: 1.2s;
+                        -o-animation-duration: 1.2s;
+                        animation-duration: 1.2s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+          </figure>
+          </var>
+          </var>
+          </var>
+          </var>
+        </div>
+      
+        <div class="butterfly_container scale_third" 
+             style="margin-top: 150px;
+                    -webkit-animation-duration: 20s;
+                    -moz-animation-duration: 20s;
+                    -ms-animation-duration: 20s;
+                    -o-animation-duration: 20s;
+                    animation-duration: 20s;">
+          <var class="rotate3d">
+          <var class="scale">
+          <var class="translate3d">
+          <var class="translate3d-1">
+          <figure class="butterfly">
+            <svg class="wing left" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: .35s;
+                        -moz-animation-duration: .35s;
+                        -ms-animation-duration: .35s;
+                        -o-animation-duration: .35s;
+                        animation-duration: .35s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+            <svg class="wing right" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: .35s;
+                        -moz-animation-duration: .35s;
+                        -ms-animation-duration: .53s;
+                        -o-animation-duration: .35s;
+                        animation-duration: .35s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+          </figure>
+          </var>
+          </var>
+          </var>
+          </var>
+        </div>
+      
+        <div class="butterfly_container scale_third" 
+             style="margin-top: -250px; margin-left: 300px; 
+                    -webkit-animation-duration: 4s;
+                    -moz-animation-duration: 4s;
+                    -ms-animation-duration: 4s;
+                    -o-animation-duration: 4s;
+                    animation-duration: 4s;">
+          <var class="rotate3d">
+          <var class="scale">
+          <var class="translate3d">
+          <var class="translate3d-1">
+          <figure class="butterfly">
+            <svg class="wing left" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: .45s;
+                        -moz-animation-duration: .45s;
+                        -ms-animation-duration: .45s;
+                        -o-animation-duration: .45s;
+                        animation-duration: .45s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+            <svg class="wing right" viewBox="0 0 50 100"
+                 style="-webkit-animation-duration: .45s;
+                        -moz-animation-duration: .45s;
+                        -ms-animation-duration: .45s;
+                        -o-animation-duration: .45s;
+                        animation-duration: .45s;">
+              <use class="left" xlink:href="#shape-butterfly-1"></use>
+            </svg> 
+          </figure>
+        </var>
+        </var>
+        </var>
+        </var>
+      </div>
+            <footer>
+              <!-- Add footer content here -->
+              <p>&copy; 2024 deGuzman Maurine. All rights reserved.</p>
+          </footer>
+
+
+    <script>
+        gsap.registerPlugin(TimelineMax);
+
+        var tl = new gsap.timeline({ repeat: -1, yoyo: true }); // Repeat the animation infinitely
+
+        var animation1 = tl.from('#leafs1, #leafs2', { duration: 0.3, scaleY: 0, transformOrigin: "bottom", ease: Power2.easeOut })
+            .from('#stem1, #stem2', { duration: 0.3, scaleY: 0, transformOrigin: "bottom", ease: Circ.easeOut })
+            .from('#lowerpetals1, #lowerpetals2, #lowerpetals3', { duration: 0.6, scaleY: 0, transformOrigin: "bottom", ease: Circ.easeOut })
+            .from('#upperpetals1, #upperpetals2, #upperpetals3', { duration: 0.6, scaleY: 0, transformOrigin: "bottom", ease: Circ.easeOut })
+            .to('#Layer_1', { duration: 1, rotation: 5, transformOrigin: "center", ease: Power1.easeInOut }) // Sway animation
+            .to('#Layer_2', { duration: 1, rotation: 5, transformOrigin: "center", ease: Power1.easeInOut }) // Sway animation
+            .to('#Layer_3', { duration: 1, rotation: 5, transformOrigin: "center", ease: Power1.easeInOut }) // Sway animation
+            .to('#Layer_4', { duration: 1, rotation: 5, transformOrigin: "center", ease: Power1.easeInOut }) // Sway animation
+            .play();
+    </script>
+
+</body>
+
+</html>
